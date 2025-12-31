@@ -1,0 +1,9 @@
+{
+	"$schema": "https://schema.railpack.com",
+	"provider": "node",
+	"packages": {
+		"bun": "1.2.5",
+		"python": "3.13",
+		"node": "22.14.0"
+	}
+}
