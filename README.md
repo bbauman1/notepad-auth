@@ -1,16 +1,6 @@
-# Better Auth Server
+# Notepad Auth
 
-A standalone authentication server built with [Better Auth](https://www.better-auth.com), Hono.js, and Bun. Provides authentication endpoints that can be consumed by external applications.
-
-## Features
-
-- Apple Sign-In authentication
-- JWT tokens for backend service integration
-- Bearer token authentication
-- OpenID Connect Discovery (`/.well-known/openid-configuration`)
-- JWKS endpoint (`/.well-known/jwks.json`)
-- Session management with cookie caching
-- Compiles to a single binary
+An auth server for using BetterAuth with Convex's Swift SDK.
 
 ## Setup
 
@@ -19,35 +9,11 @@ A standalone authentication server built with [Better Auth](https://www.better-a
 3. Run database migrations: `bunx @better-auth/cli migrate`
 4. Start the server: `bun run dev`
 
+I deploy on Railway and if you upload there it should deploy easily.
+
 ## Environment Variables
 
 See `.env.example` for required variables.
-
-## Endpoints
-
-- `GET /health` - Health check
-- `GET /.well-known/openid-configuration` - OpenID Connect Discovery
-- `GET /.well-known/jwks.json` - JSON Web Key Set
-- `GET /api/auth/token` - Get JWT token (requires authentication)
-- `POST /api/auth/sign-in/apple` - Apple Sign-In
-- `GET /api/auth/sign-out` - Sign out
-
-## Deployment
-
-### Railway
-
-[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/template/VOQsdL)
-
-### Self-hosted
-
-```bash
-bun run build  # Compiles to ./app
-./app          # Run the binary
-```
-
-## Documentation
-
-For full Better Auth documentation: https://www.better-auth.com/docs
 
 ## License
 
