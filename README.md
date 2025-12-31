@@ -1,6 +1,8 @@
 # Notepad Auth
 
-An auth server for using BetterAuth with Convex's Swift SDK.
+Notepad is an app I made to try out using BetterAuth and Convex in a SwiftUI app. ConvexSwift does not yet natively support BetterAuth, so this repo has some modifications to the auth server to make it work.
+
+- Companion client repo for Notepad - https://github.com/bbauman1/notepad
 
 ## Setup
 
